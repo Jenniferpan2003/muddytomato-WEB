@@ -17,6 +17,9 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
+  // 匹配你的 GitHub 仓库名，修复部署后资源路径错误
+  base: '/muddytomato-WEB/',
+
   plugins: [
     figmaAssetResolver(),
     // The React and Tailwind plugins are both required for Make, even if
