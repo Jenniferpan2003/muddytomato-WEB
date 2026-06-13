@@ -17,8 +17,8 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
-  // 匹配你的 GitHub 仓库名，修复部署后资源路径错误
-  base: '/muddytomato-WEB/',
+  // Use relative asset paths so the built site works from any folder or subpath.
+  base: './',
 
   plugins: [
     figmaAssetResolver(),
